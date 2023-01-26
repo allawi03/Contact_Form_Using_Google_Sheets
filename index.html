@@ -13,17 +13,20 @@
 
     <style>
         body {
-            background-color: #f2f2f2;
+            background-color: #e8f0ec;
             font-family: Arial, Helvetica, sans-serif;
         }
         .container {
             background-color: #fff;
-            width: 500px;
+            width: 80%;
             margin-top: 20px;
-            /* margin: 0 auto; */
+            margin-bottom: 20px;
+            height: 100vh;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+           
+            
         }
         .contact-box form {
             display: flex;
@@ -34,8 +37,8 @@
         
         .container h1 {
             text-align: center;
-            text-transform: uppercase;
-            color: #333;
+            color: #d1e0d9;
+
         }
         .container form {
             margin-top: 20px;
@@ -64,11 +67,10 @@
             margin-top: 20px;
             border: none;
             border-radius: 5px;
-            background-color: #333;
-            color: #fff;
+            background-color: #d1e0d9;
+            color: #333;
             cursor: pointer;
             font-size: 16px;
-            text-transform: uppercase;
         }
         .container form .btn:hover {
             background-color: #555;
@@ -80,29 +82,19 @@
         
         form input[type="text"],textarea,
         #sub{
-            background-color: #333;
+            background-color: #d1e0d9;
             color: #fff;
             cursor: pointer;
             font-size: 16px;
-            text-transform: uppercase;
             width: 50%;
             padding: 10px;
             margin-top: 20px;
             border: none;
             border-radius: 5px;
-        }
-        #sub:hover{
-            background-color: #555;
-        }
+        } }
         /* Success message div  */
         #successmsg, #errormsg{
             margin-top: 10px;
-        }
-
-        @media (max-width: 500px) {
-            .container {
-                width: 100%;
-            }
         }
 
     </style>
@@ -116,7 +108,6 @@
                     <input type="text" class="field" placeholder="Subject" id="sub" name ="subject" required>
                     <textarea placeholder="Message" class="field" name="message" required></textarea>
                     <input type="submit" class="btn" value="Send">
-
                 </form>
         </div>
 
@@ -133,7 +124,7 @@
     
                     </div>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyJekf24Ul5OLqzN5p5GuopqYf2eUp6o9h6i4SEISCxOrTU1CEVNbu9Fg66JhN4PiIK/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxliCs0DlVR7mOk5bABOyOk_WPLTUYnl_mno9gOwe23UBxXuP_ZTsgyMue8QEls3YPYuw/exec'
         const form = document.forms['submit-to-google-sheet'];
         const successmsg=document.getElementById('successmsg');
         const errormsg=document.getElementById('errormsg');
